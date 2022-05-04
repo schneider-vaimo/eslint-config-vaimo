@@ -17,7 +17,8 @@
     "styleguide",
     "vaimo"
   ],
-  "author": "Andreas Schneider (andreas.schneider@vaimo.com)",
+  "repository": "git@github.com:wesbos/eslint-config-wesbos.git",
+  "author": "Andreas Schneider <andreas.schneider@vaimo.com>",
   "license": "MIT",
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.22.0",
