@@ -21,22 +21,22 @@ Our export contains all of our ESLint rules, extended from Airbnb's recommended 
   "extends": ["vaimo"]
 }
 ```
-For TypeScript projects, use `vaimo/typescript`
+For TypeScript projects, use `vaimo/typescript`.
 ```json
 {
   "extends": ["vaimo/typescript"]
 }
 ```
-For React projects, use `vaimo/react`
+For React projects, use `vaimo/react`. We assume your project is also using TypeScript.
 ```json
 {
   "extends": ["vaimo/react"]
 }
 ```
-For React projects using TypeScript, use `vaimo/react-typescript`
+For Vue projects, use `vaimo/vue`. We assume your project is also using TypeScript.
 ```json
 {
-  "extends": ["vaimo/react-typescript"]
+  "extends": ["vaimo/vue"]
 }
 ```
 
@@ -46,7 +46,7 @@ TypeScript users will also need a tsconfig.json file in their project. An empty 
 ```json
 "scripts": {
   "lint": "eslint ."
-  "lint:fix": "eslint . --fix"
+  "lint:fix": "eslint --fix ."
 }
 ```
 Now you can manually lint your code by running npm run lint and fix all fixable issues with npm run lint:fix. You probably want your editor to do this though.
@@ -77,7 +77,7 @@ Once you have done the above install you can get your editor to lint and fix for
 ```json
 // These are all my auto-save configs
 "editor.formatOnSave": true,
-// turn it off for JS, JSX, TS and TSX, we will do this via eslint
+// turn it off for JS, JSX, TS, TSX, and VUE, we will do this via eslint
 "[javascript]": {
   "editor.formatOnSave": false
 },
@@ -90,6 +90,18 @@ Once you have done the above install you can get your editor to lint and fix for
 "[typescriptreact]": {
   "editor.formatOnSave": false
 },
+"[typescriptreact]": {
+  "editor.formatOnSave": false
+}
+"[vue]": {
+  "editor.formatOnSave": false
+},
+// You have to configure the eslint.validate option of the extension to check .vue files, because the extension targets only *.js or *.jsx files by default.
+"eslint.validate": [
+  "javascript",
+  "javascriptreact",
+  "vue"
+],
 // show eslint icon at bottom toolbar
 "eslint.alwaysShowStatus": true,
 // tell the ESLint plugin to run on save

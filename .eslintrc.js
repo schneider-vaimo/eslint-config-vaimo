@@ -2,7 +2,8 @@ module.export = {
     extends: ['airbnb-base'],
     plugins: ['import'],
     env: {
-        "es6": true
+        browser: true,
+        node: true,
     },
     rules: {
         radix: 0

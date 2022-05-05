@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-vaimo",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "This package provides Vaimo's .eslintrc as an extensible shared config.",
   "main": "index.js",
   "scripts": {
@@ -32,6 +32,7 @@
     "eslint-plugin-jsx-a11y": "^6.5.1",
     "eslint-plugin-react": "^7.29.4",
     "eslint-plugin-react-hooks": "^4.5.0",
+    "eslint-plugin-vue": "^8.7.1",
     "typescript": "^4.6.4"
   },
   "peerDependencies": {
