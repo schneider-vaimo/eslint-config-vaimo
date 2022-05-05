@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-vaimo",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "This package provides Vaimo's .eslintrc as an extensible shared config.",
   "main": "index.js",
   "scripts": {
